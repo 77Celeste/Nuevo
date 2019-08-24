@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link href="../assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="contenedor.css">
+
+    <title>Contenedor</title>
+    <script src="../../labora/Chart.min.js"></script>
+    <script src="../../labora/utils.js"></script>
+    <link rel="stylesheet" href="../../labora/uno.css">
+    <link rel="stylesheet" href="../../labora/dos.css">
+    <link rel="stylesheet" href="../../labora/tres.css">
+    <link rel="stylesheet" href="../../labora/cuatro.css">
+    <style>
+        canvas {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ============================================================= -->
+    <!-- main wrapper -->
+    <!-- ============================================================== -->
+    <div class="dashboard-main-wrapper">
+        <!-- ============================================================== -->
+        <!-- navbar -->
+        <!-- ============================================================== -->
+
+        <!-- ============================================================== -->
+        <!-- end navbar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- left sidebar -->
+        <!-- ============================================================== -->
+
+        <!-- ============================================================== -->
+        <!-- end left sidebar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- wrapper  -->
+        <!-- ============================================================== -->
+        <div class="dashboard-wrapper">
+            <div class="container-fluid  dashboard-content">
+                <main class="main-content bgc-grey-100">
+                    <div id="mainContent">
+                        <div class="row gap-20">
+                            <div class="col-md-12"></div>
+                            <div class="col-md-9">
+                                <div class="col-md-12" width="100%">
+                                    <div class="bgc-white p-20 bd" width="100%">
+                                        <h6 class="c-grey-900">Calificaciones</h6>
+                                        <div class="mT-30"><canvas id="canvas" width="100%"></canvas></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="bgc-white p-20 bd">
+                                    <h6 class="c-grey-900">Dimensiones</h6>
+                                    <div class="mT-30">
+                                        <form>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-12"><label
+                                                        for="inputEmail4">Docente</label>
+                                                    <input type="email" class="form-control" id="inputEmail4"
+                                                        placeholder="Docente"></div>
+                                                <div class="form-group col-md-12"><label for="inputEmail4">Labs</label>
+                                                    <input type="email" class="form-control" id="inputEmail4"
+                                                        placeholder="Labs">
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6"><label class="fw-500">Desde la
+                                                        Fecha:</label>
+                                                    <div class="timepicker-input input-icon form-group">
+                                                        <div class="input-group">
+                                                            <div class="input-group-addon bgc-white bd bdwR-0"><i
+                                                                    class="ti-calendar"></i></div><input type="text"
+                                                                class="form-control bdc-grey-200 start-date"
+                                                                placeholder="Desde" data-provide="datepicker">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-6"><label class="fw-500">Hasta la
+                                                        Fecha:</label>
+                                                    <div class="timepicker-input input-icon form-group">
+                                                        <div class="input-group">
+                                                            <div class="input-group-addon bgc-white bd bdwR-0"><i
+                                                                    class="ti-calendar"></i></div><input type="text"
+                                                                class="form-control bdc-grey-200 start-date"
+                                                                placeholder="Hasta" data-provide="datepicker">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-4"><label for="inputanio">Año</label>
+                                                    <input type="text" class="form-control" id="inputanio"></div>
+                                                <div class="form-group col-md-4"><label for="inputCity">Mes</label>
+                                                    <input type="text" class="form-control" id="inputCity"></div>
+                                                <div class="form-group col-md-4"><label for="inputState">Dia</label>
+                                                    <input type="text" class="form-control" id="inputState"></div>
+                                            </div><button type="submit" class="btn btn-primary">aceptar</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12"></div>
+                            <div class="col-md-10">
+                                <div class="bgc-white p-20 bd">
+                                    <div class="mT-30">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="bgc-white bd bdrs-3 p-20 mB-20">
+                                                    <h4 class="c-grey-900 mB-20">Lista de los LAB buscados</h4>
+                                                    <table id="dataTable" class="table table-striped table-bordered"
+                                                        cellspacing="0" width="100%">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Fecha</th>
+                                                                <th>Labs</th>
+                                                                <th>Nombre</th>
+                                                                <th>Nota</th>
+                                                                <th>Estado</th>
+                                                                <th>Materia</th>
+                                                                <th>Docente</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>2019-04-11</td>
+                                                                <td>lab1</td>
+                                                                <td>ubuntu</td>
+                                                                <td>61</td>
+                                                                <td>terminado</td>
+                                                                <td><a href="#"
+                                                                        class="text-decoration-none">seguridad</a></td>
+                                                                <td>Alexander</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2019-05-11</td>
+                                                                <td>lab2</td>
+                                                                <td>android</td>
+                                                                <td>0</td>
+                                                                <td>falta</td>
+                                                                <td><a href="#"
+                                                                        class="text-decoration-none">seminario</a></td>
+                                                                <td>Ditmar</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2019-06-11</td>
+                                                                <td>lab3</td>
+                                                                <td>docker</td>
+                                                                <td>0</td>
+                                                                <td>Pendiente</td>
+                                                                <td><a href="#"
+                                                                        class="text-decoration-none">servidores</a></td>
+                                                                <td>Clever</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="bgc-white p-20 bd">
+                                    <h6 class="c-grey-900">Indicadores</h6>
+                                    <div class="mT-30">
+                                        <form class="container" id="needs-validation" novalidate>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-12"><label for="v01">Guardar
+                                                        Estado</label>
+                                                    <button class="btn btn-primary" type="submit">aceptar</button></div>
+                                                <div class="form-group col-md-12"><label for="v02">Imprimir</label>
+                                                    <button class="btn btn-primary" type="submit">aceptar</button></div>
+                                                <div class="form-group col-md-12"><label for="v02">Materia</label> <a
+                                                        href="chat.html"><button class="btn btn-primary"
+                                                            type="submit">aceptar</button></a></div>
+                                            </div>
+                                        </form>
+                                        <script>
+                                            ! function () {
+                                                "use strict";
+                                                window.addEventListener("load", function () {
+                                                    var e = document.getElementById("needs-validation");
+                                                    e.addEventListener("submit", function (t) {
+                                                        !1 === e.checkValidity() && (t.preventDefault(),
+                                                            t
+                                                            .stopPropagation()), e.classList.add(
+                                                            "was-validated")
+                                                    }, !1)
+                                                }, !1)
+                                            }()
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <!-- ============================================================== -->
+                <!-- pageheader -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- end pageheader -->
+                <!-- ============================================================== -->
+
+            </div>
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <div class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                            Copyright © 2018 Concept. All rights reserved. Dashboard by <a
+                                href="https://colorlib.com/wp/">Colorlib</a>.
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="text-md-right footer-links d-none d-sm-block">
+                                <a href="javascript: void(0);">About</a>
+                                <a href="javascript: void(0);">Support</a>
+                                <a href="javascript: void(0);">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- end footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- end wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <script>
+        var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre",
+                "Noviembre", "Diciembre"
+            ],
+            config = {
+                type: "line",
+                data: {
+                    labels: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio"],
+                    datasets: [{
+                        label: "seminario",
+                        backgroundColor: window.chartColors.orange,
+                        borderColor: window.chartColors.orange,
+                        data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(),
+                            randomScalingFactor(), randomScalingFactor(), randomScalingFactor(),
+                            randomScalingFactor()
+                        ],
+                        fill: !1
+                    }, {
+                        label: "Seguridad",
+                        fill: !1,
+                        backgroundColor: window.chartColors.blue,
+                        borderColor: window.chartColors.blue,
+                        data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(),
+                            randomScalingFactor(), randomScalingFactor(), randomScalingFactor(),
+                            randomScalingFactor()
+                        ]
+                    }, {
+                        label: "Servidores",
+                        fill: !1,
+                        backgroundColor: window.chartColors.green,
+                        borderColor: window.chartColors.green,
+                        data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(),
+                            randomScalingFactor(), randomScalingFactor(), randomScalingFactor(),
+                            randomScalingFactor()
+                        ]
+                    }]
+                },
+                options: {
+                    responsive: !0,
+                    title: {
+                        display: !0
+                    },
+                    tooltips: {
+                        mode: "index",
+                        intersect: !1
+                    },
+                    hover: {
+                        mode: "nearest",
+                        intersect: !0
+                    },
+                    scales: {
+                        xAxes: [{
+                            display: !0,
+                            scaleLabel: {
+                                display: !0,
+                                labelString: "meses"
+                            }
+                        }],
+                        yAxes: [{
+                            display: !0,
+                            scaleLabel: {
+                                display: !0,
+                                labelString: "calificaciones"
+                            }
+                        }]
+                    }
+                }
+            };
+        window.onload = function () {
+            var a = document.getElementById("canvas").getContext("2d");
+            window.myLine = new Chart(a, config)
+        }
+    </script>
+
+
+    <!-- ============================================================== -->
+    <!-- end main wrapper  -->
+    <!-- ============================================================== -->
+    <!-- Optional JavaScript -->
+    <!-- jquery 3.3.1 -->
+    <script src="../assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <!-- bootstap bundle js -->
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

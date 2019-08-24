@@ -1,0 +1,399 @@
+
+@charset "UTF-8";
+
+body {
+    font-family: 'Circular Std Book';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #71748d;
+    background-color: #efeff6;
+    -webkit-font-smoothing: antialiased;
+}
+.dashboard-main-wrapper {
+    min-height: 100%;
+    padding-top: 60px;
+    position: relative;
+}
+.dashboard-header {
+    border:1px solid #007bff;
+}
+.dashboard-header .navbar {
+    padding: 0px;
+    border-bottom: 1px solid #e6e6f2;
+    -webkit-box-shadow: 0px 0px 28px 0px rgba(82, 63, 105, 0.13);
+    box-shadow: 0px 0px 28px 0px rgba(82, 63, 105, 0.13);
+    /*-webkit-transition: all 0.3s ease;*/
+    min-height: 60px;
+}
+.navbar-brand {
+    display: inline-block;
+    margin-right: 1rem;
+    line-height: inherit;
+    white-space: nowrap;
+    padding: 11px 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #007bff;
+}
+a {
+    color: #71748d;
+}
+.navbar-toggler {
+    padding: .25rem 0.5rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+button {
+    border:1px solid #ef172c
+}
+.navbar-right-top {
+    border:1px solid #3d405c
+}
+ul {
+    border:1px solid violet
+}
+.navbar-right-top .nav-item {
+    border-right: 1px solid #e6e6f2;
+}
+ul li {
+    border:1px solid yellow
+}
+.top-search-bar {
+    padding-top: 12px;
+    padding-right: 24px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #71748d;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #d2d2e4;
+    border-radius: 2px;
+}
+input {
+    border:1px solid yellowgreen
+}
+.navbar-right-top .nav-item {
+    border-right: 1px solid #e6e6f2;
+}
+.notification{
+    border:1px solid #ef172c
+}
+/*ul li*/
+.navbar-right-top .nav-item .nav-link {
+    padding: 13px 20px;
+    font-size: 16px;
+    line-height: 2;
+    color: #82849f;
+}
+/*a {
+    color: #71748d;
+}*/
+
+/*../assets/vendor/fonts/fontawesome/css/fontawesome-all.css*/
+/*.fa, .fas {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+.fa-fw {
+    text-align: center;
+    width: 1.25em;
+}
+.fa, .fas, .far, .fal, .fab {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+.fa-bell:before {
+    content: "\f0f3";
+}*/
+/*../assets/vendor/fonts/fontawesome/css/fontawesome-all.css*/
+.indicator {
+    content: '';
+    position: absolute;
+    top: 16px;
+    right: 23px;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    background-color: #ef172c;
+    animation: .9s infinite beatHeart;
+    transform-origin: center;
+}
+@keyframes beatHeart {
+    0% {
+        transform: scale(0.9);
+    }
+    25% {
+        transform: scale(1.1);
+    }
+    40% {
+        transform: scale(0.9);
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(0.9);
+    }
+}
+.navbar-right-top .nav-item {
+    border-right: 1px solid #e6e6f2;
+}
+.connection {
+    border:1px solid #3d405c
+}
+/*ul li*/
+/*../assets/vendor/fonts/fontawesome/css/fontawesome-all.css*/
+/*.fa, .fas {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+.fa-fw {
+    text-align: center;
+    width: 1.25em;
+}
+.fa, .fas, .far, .fal, .fab {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}*/
+.fa-th:before {
+    content: "\f00a";
+}
+/*../assets/vendor/fonts/fontawesome/css/fontawesome-all.css*/
+.dropdown-menu {
+    background: #fff;
+    font-size: 14px;
+    color: #3d405c;
+    border: 1px solid #e6e6f2;
+}
+.notification-dropdown, .connection-dropdown, .nav-user-dropdown {
+    padding: 0px;
+    margin: 0px;
+}
+.notification-dropdown {
+    min-width: 320px;
+}
+.notification-title {
+    font-size: 14px;
+    color: #3d405c;
+    text-align: center;
+    padding: 8px 0px;
+    border-bottom: 1px solid #e3e3e3;
+    line-height: 1.5;
+    background-color: #fffffe;
+}
+.notification-list {
+    border:1px solid #ef172c
+}
+.notification-list .list-group-item.active {
+    z-index: 2;
+    color: #3d405c;
+    background-color: #f7f7fb;
+    border-color: #e1e1e7;
+}
+
+.notification-list .list-group-item {
+    border-radius: 0px;
+    padding: 12px;
+    margin-top: -1px;
+    border-left: transparent;
+    border-right: transparent;
+}
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 16px 20px;
+    margin-bottom: -1px;
+    border: 1px solid #e6e6f2;
+}
+.notification-info {
+    border:1px solid violet
+}
+.notification-list .list-group-item.active {
+    z-index: 2;
+    color: #3d405c;
+    background-color: #f7f7fb;
+    border-color: #e1e1e7;
+}
+
+.notification-list-user-img {
+    float: left;
+}
+.user-avatar-md {
+    height: 32px;
+    width: 32px;
+}
+.notification-list-user-block {
+    padding-left: 50px;
+    font-size: 14px;
+    line-height: 21px;
+}
+.notification-list-user-name {
+    color: #5969ff;
+    font-size: 14px;
+    margin-right: 8px;
+}
+.list-footer, .conntection-footer {
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0px;
+    line-height: 1.5;
+    font-weight: 700;
+    background-color: #5969ff;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.list-footer a, .conntection-footer a {
+    color: #fff;
+}
+/**/
+.connection-dropdown {
+    border:1px solid #007bff
+}
+.notification-dropdown, .connection-dropdown, .nav-user-dropdown {
+    padding: 0px;
+    margin: 0px;
+}
+.connection-list {
+    width: 300px;
+    padding: 20px;
+}
+.connection-item {
+    border-radius: 3px;
+    line-height: 32px;
+    text-align: center;
+    padding: 12px 7px 4px;
+    display: block;
+    border: 1px solid transparent;
+    color: #3d405c;
+    font-size: 12px;
+}
+.connection-item img {
+    width: 32px;
+}
+.connection-item span {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.navbar-right-top .nav-item:last-child {
+    border: none;
+}
+
+.navbar-right-top .nav-item {
+    border-right: 1px solid #e6e6f2;
+}
+.nav-user {
+    border:1px solid yellowgreen
+}
+.user-avatar-md {
+    height: 32px;
+    width: 32px;
+}
+/*.dropdown-menu {
+    background: #fff;
+    font-size: 14px;
+    color: #3d405c;
+    border: 1px solid #e6e6f2;
+}
+
+.notification-dropdown, .connection-dropdown, .nav-user-dropdown {
+    padding: 0px;
+    margin: 0px;
+}*/
+.nav-user-dropdown {
+    border:1px solid turquoise
+}
+
+.nav-user-dropdown {
+    padding: 0px;
+    min-width: 230px;
+    margin: 0px;
+}
+.nav-user-info {
+    background-color: #5969ff;
+    line-height: 1.4;
+    padding: 12px;
+    color: #fff;
+    font-size: 13px;
+    border-radius: 2px 2px 0 0;
+}
+.nav-user-name {
+    border:1px solid teal
+}
+h5 {
+    font-size: 15px;
+    line-height: 26px;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #3d405c;
+    margin: 0px 0px 15px 0px;
+    font-family: 'Circular Std Medium';
+}
+.nav-user-info .status {
+    float: left;
+    top: 7px;
+    left: 0px;
+}
+.nav-user-dropdown .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 12px 22px 15px;
+    clear: both;
+    font-weight: 400;
+    color: #686972;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    font-size: 13px;
+    line-height: 0.4;
+}
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #3d405c;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+/*../assets/vendor/fonts/fontawesome/css/fontawesome-all.css
+.fa, .fas {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+.fa, .fas, .far, .fal, .fab {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+../assets/vendor/fonts/fontawesome/css/fontawesome-all.css*/

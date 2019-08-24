@@ -1,0 +1,28 @@
+
+      .dataTables_wrapper .dataTables_paginate .paginate_button.next, .dataTables_wrapper .dataTables_paginate .paginate_button.previous, .dataTables_wrapper .dataTables_paginate .paginate_button.first, .dataTables_wrapper .dataTables_paginate .paginate_button.last {
+        border-radius: 2px;
+        text-decoration: none; }
+        .dataTables_wrapper .dataTables_paginate .paginate_button.next:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.next:focus, .dataTables_wrapper .dataTables_paginate .paginate_button.previous:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.previous:focus, .dataTables_wrapper .dataTables_paginate .paginate_button.first:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.first:focus, .dataTables_wrapper .dataTables_paginate .paginate_button.last:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.last:focus {
+          color: #fff !important; }
+        .dataTables_wrapper .dataTables_paginate .paginate_button.next.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.previous.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.first.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.last.disabled {
+          opacity: 0.4;
+          pointer-events: none; }
+      .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+        color: #fff !important;
+        background: #7774e7; }
+      .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+        color: #fff !important;
+        background: #7774e7; }
+        .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+          color: #fff !important;
+          background: #7774e7; }
+
+
+body {
+  background: #EB5757;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#000000), to(#EB5757));
+  background: -o-linear-gradient(left, #000000, #EB5757);
+  background: linear-gradient(to right, #000000, #EB5757);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
