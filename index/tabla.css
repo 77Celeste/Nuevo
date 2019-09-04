@@ -1,0 +1,125 @@
+.mB-20 {
+  margin-bottom: 20px !important;
+}
+
+.bdrs-3 {
+  border-radius: 3px !important;
+}
+
+h4, .h4 {
+  font-size: 21px;
+  font-size: 1.3125rem;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
+}
+
+[type="search"] {
+  outline-offset: -2px;
+  -webkit-appearance: none;
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.dataTables_wrapper {
+  overflow: hidden;
+  padding-bottom: 5px;
+}
+
+div.dataTables_wrapper .dataTables_length {
+  color: #313435;
+  float: left;
+}
+
+@media screen and (max-width: 767px) {
+  .dataTables_wrapper .dataTables_length {
+    text-align: left;
+  }
+}
+
+.dataTables_wrapper .dataTables_length select {
+  border: 1px solid rgba(0, 0, 0, .0625);
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  height: 35px;
+  font-size: 14px;
+  padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #72777a;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+div.dataTables_wrapper .dataTables_filter {
+  color: #313435;
+  float: right;
+}
+
+@media screen and (max-width: 767px) {
+  .dataTables_wrapper .dataTables_filter {
+    text-align: left;
+  }
+}
+
+.dataTables_wrapper .dataTables_filter input {
+  border: 1px solid rgba(0, 0, 0, .0625);
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  height: 35px;
+  font-size: 14px;
+  margin-left: 15px;
+  padding: 5px;
+  color: #72777a;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+/*scrollHead*/
+th {
+    text-align: inherit;
+}
+.table th, .table td {
+    padding: 12px;
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid rgba(0, 0, 0, .0625);
+}
+.table {
+    width: 100%;
+    margin-bottom: 16px;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+.table-bordered {
+    border: 1px solid rgba(0, 0, 0, .0625);
+}
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid rgba(0, 0, 0, .0625);
+}
+.table-bordered th, .table-bordered td {
+    border: 1px solid rgba(0, 0, 0, .0625);
+}
+table.dataTable.no-footer {
+    border-bottom: 1px solid rgba(0, 0, 0, .0625);
+    margin-bottom: 20px;
+}
+.table-bordered {
+    border: 1px solid rgba(0, 0, 0, .0625);
+}
